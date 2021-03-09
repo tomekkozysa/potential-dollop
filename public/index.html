@@ -24,20 +24,95 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>quickbooks</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header class="topbar">
+      <h1 class="topbar-logo">Quickbooks</h1>
+      <nav class="topbar-nav">
+        <ul class="nav-list">
+          <li class="nav-list-item">Item 1</li>
+          <li class="nav-list-item">Item 2</li>
+          <li class="nav-list-item">Item 3</li>
+        </ul>
+      </nav>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <main class="content">
+    <section class="calculator">
+      <div id="root"></div>
+    </section>
+    <section class="faq">
+      <h3 class="faq-headline">Frequently asked questions</h3>
+      <ul class="faq-list">
+        <li class="faq-list-item">Some latin</li>
+        <li class="faq-list-item">Some latin</li>
+        <li class="faq-list-item">Some latin</li>
+        <li class="faq-list-item">Some latin</li>
+      </ul>
+      </section>
+      </main>
   </body>
+  <style>
+    :root{
+      --lightgrey:#efefef;
+      --content-padding:2em;
+    }
+    /* quick reset */
+    * {
+      margin:0; padding:0;
+      box-sizing: border-box;
+    }
+
+    .content{
+      max-width:800px;
+      margin:100px auto;
+    }
+    .topbar{
+      padding:1em;
+      display:flex;
+      flex-direction: row;
+    }
+    .topbar-logo{
+      flex:1 1 100px;
+    }
+    .topbar-nav{
+      align-self: flex-end;
+      flex:1;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .nav-list{
+      align-self: flex-end;
+      display: flex;      
+
+    }
+    .nav-list-item{
+      list-style:none;
+      padding-left:2em;
+    }
+
+    .faq{
+      padding-top:var(--content-padding);
+    }
+    
+    .faq-headline{
+      padding:1em var(--content-padding)
+    }
+    .faq-list{
+      list-style: none;
+    }
+    .faq-list-item{
+      border:1px solid var(--lightgrey);
+      border-width:1px 0;
+      padding:1em var(--content-padding);
+    }
+    .faq-list-item:after{
+      content:"▼";
+      transform:translateY(.5em);
+      font-size: .65em;
+      float:right;
+    }
+  </style>
 </html>
