@@ -1,0 +1,30 @@
+.field{
+    width:100%;
+  }
+  
+  
+  
+  input[type="text"]{
+    padding:.5em 1.5ch;
+    font-size:inherit;
+    width:calc(100% - 2ch);
+    font-weight: bold;
+    
+  }
+  .currency-field{
+    width:100%;
+    position: relative;
+  }
+  
+  .currency-field::before {
+    font-size:inherit;
+    font-weight: bold;
+    content: "£";
+    padding-left:0.5ch;
+    z-index:100;
+    position: absolute;
+    top:.55em;
+    left:0;
+    
+  }
+  

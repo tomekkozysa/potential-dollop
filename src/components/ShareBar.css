@@ -1,0 +1,33 @@
+.sharebar-headline{
+    font-weight: normal;
+  }
+  .sharebar{  
+    padding-left:var(--content-padding);
+    padding-top:var(--content-padding); 
+    padding-bottom:var(--content-padding);
+  }
+  
+  .sharebar-icons{
+    margin-top:1em;
+  }
+  
+  .icon-circle{
+    display: inline-block;
+    border-radius: 250%;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    background-color: black;
+    text-align: center;
+    vertical-align: middle;
+  
+    margin-right:15px;
+      
+  }
+  .icon-round{
+      width: 20px;    
+      height:20px;
+      line-height: 20px;
+      color:white;
+      background-color: black;
+  }

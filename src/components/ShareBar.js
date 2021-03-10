@@ -1,4 +1,6 @@
 import {  FaLinkedin, FaFacebookF, FaPinterest, FaInstagram, FaYoutube, FaEnvelope, FaLink  } from 'react-icons/fa'
+import './ShareBar.css'
+
 const ShareBar = () => {
     return (
         <div className="sharebar">

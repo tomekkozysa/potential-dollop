@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './Field.css'
 
 const Field = ({label, onUpdate}) => {
     const [value, setValue] = useState(0);

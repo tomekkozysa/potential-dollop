@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Field from './Field.js';
+import './Calculator.css';
 
 const Calculator = () => {
 
