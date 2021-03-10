@@ -30,8 +30,8 @@ const Calculator = () => {
             <Field label="Other income" onUpdate={updateOtherIncome} />
             <div className="calculator-results">
                 <h4 className="calculator-results-headline">Total</h4>
-                <div className="calculator-results-value">
-                    <span className={getSum() > 999 ? 'is_small' : 'is_regular'}>{displaySum()}</span>    
+                <div className={`calculator-results-value ${getSum() > 999 ? "is_small" : "is_regular"}`}  >
+                    {displaySum()}
                 </div>                
             </div>
         </div>

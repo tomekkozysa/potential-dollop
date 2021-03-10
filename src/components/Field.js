@@ -5,18 +5,21 @@ const Field = ({label, onUpdate}) => {
     const updateValue= (e) =>{    
         let newvalue = e.target.value;
         // this prevents no numeric values 
-        if(!isNaN(newvalue)){
+        console.log('updateValue',newvalue)
+        if(!isNaN(newvalue) && newvalue!==''){
+            console.log('!NaN',newvalue)
             setValue(newvalue);
+            onUpdate(parseFloat(newvalue).toFixed(2));
         }
         
-        onUpdate(parseFloat(newvalue).toFixed(2));
+        
     }
 
     const fixValue = (e)=>{
         let fv = parseFloat(e.target.value).toFixed(2);
         
         if(isNaN(fv)){
-            fv = 0.00;
+            fv = 0;
         }
         setValue(fv);
         onUpdate(fv);

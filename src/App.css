@@ -61,11 +61,14 @@ input[type="text"]{
   justify-content: center;
   color:white;
   height:100%;
-  font-size: inherit;
+  /* font-size: inherit; */
+  font-size:4em;
+  font-weight: 600;
+  letter-spacing: -.02em;
 }
 
-.calculator-results-value span.is_small{font-size:1em};
-.calculator-results-value span{font-size:5em};
+.calculator-results-value.is_small{font-size:2em};
+
 
 .field{
   width:100%;
