@@ -40,9 +40,10 @@
     </header>
 
     <main class="content">
-    <section class="calculator">
-      <div id="root"></div>
-    </section>
+    <!-- <section class="calculator">
+      
+    </section> -->
+    <div id="root"></div>
     <section class="faq">
       <h3 class="faq-headline">Frequently asked questions</h3>
       <ul class="faq-list">
@@ -57,7 +58,10 @@
   <style>
     :root{
       --lightgrey:#efefef;
-      --content-padding:2em;
+      --content-padding:50px;
+      --fs-default:14px;
+
+      
     }
     /* quick reset */
     * {
@@ -68,7 +72,12 @@
     .content{
       max-width:800px;
       margin:100px auto;
+      font-size:var(--fs-default);
     }
+    h4, h5{
+      font-size:var(--fs-default);
+    }
+
     .topbar{
       padding:1em;
       display:flex;
@@ -94,7 +103,7 @@
     }
 
     .faq{
-      padding-top:var(--content-padding);
+      padding-top:1em;
     }
     
     .faq-headline{
